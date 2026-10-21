@@ -14,21 +14,89 @@
 ### Các lệnh đã chạy (B1–B7)
 
 ```shell
-# Ghi lần lượt các lệnh đã chạy, mỗi lệnh một dòng
+pwd
+Get-ChildItem -Force
+Move-Item .\lich_hoc.txt .\docs\
+mv .\logo_trung_tam.PNG, .\anh_lop_hoc.JPG .\media\
+cp .\media\logo_trung_tam.PNG .\archive\
+rm .\temp_201.tmp
+rm .\temp_202.tmp
+cd .\logs\
+Get-ChildItem
+cd ..
+cd .\docs\
+cp ..\media\anh_lop_hoc.JPG ..\archive\
+cd ..
 
 ```
 
 ### Kết quả B1 (pwd)
 
 ```text
-(Dán kết quả vào đây – xoá dòng này)
+
+Path
+----
+C:\Users\Admin\Downloads\starter-kit\starter-kit\trung-tam-tieng-anh
 
 ```
 
 ### Kết quả liệt kê toàn bộ dự án – B8 (Windows: Get-ChildItem -Recurse -Force; macOS: ls -aR)
 
 ```text
-(Dán kết quả vào đây – xoá dòng này)
+ Directory: C:\Users\Admin\Downloads\starter-kit\starter-kit\trung-tam-tieng-anh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/21/2026   6:58 PM                archive
+d-----        10/21/2026   6:54 PM                data
+d-----        10/21/2026   6:55 PM                docs
+d-----        10/21/2026   6:54 PM                logs
+d-----        10/21/2026   6:56 PM                media
+------        10/19/2026  10:04 AM             83 .env
+-a----        10/21/2026   6:48 PM            932 bai_lam_ngay1.md
+
+
+    Directory: C:\Users\Admin\Downloads\starter-kit\starter-kit\trung-tam-tieng-anh\archive
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/19/2026  10:04 AM          13559 anh_lop_hoc.JPG
+-a----        10/19/2026  10:04 AM           5184 logo_trung_tam.PNG
+
+
+    Directory: C:\Users\Admin\Downloads\starter-kit\starter-kit\trung-tam-tieng-anh\data
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/19/2026  10:04 AM           5070 hoc_vien_khoa_3.xlsx
+
+
+    Directory: C:\Users\Admin\Downloads\starter-kit\starter-kit\trung-tam-tieng-anh\docs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/19/2026  10:04 AM             67 lich_hoc.txt
+
+
+    Directory: C:\Users\Admin\Downloads\starter-kit\starter-kit\trung-tam-tieng-anh\logs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/19/2026  10:04 AM           1072 access.log
+
+
+    Directory: C:\Users\Admin\Downloads\starter-kit\starter-kit\trung-tam-tieng-anh\media
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/19/2026  10:04 AM          13559 anh_lop_hoc.JPG
+-a----        10/19/2026  10:04 AM           5184 logo_trung_tam.PNG
 
 ```
 
